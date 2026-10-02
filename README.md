@@ -53,6 +53,7 @@
 ```text
 naiwa-pet/
 ├─ README.md                 使用、开发和发布说明
+├─ LICENSE                   MIT 许可证
 ├─ package.json              npm 命令与开发依赖
 ├─ package-lock.json         npm 依赖锁文件
 ├─ .gitignore                本地文件忽略规则
@@ -134,6 +135,10 @@ npm run tauri build -- --locked
 
 ### GitHub 发布
 
-源码仓库提交 `src/`、`src-tauri/`、`tests/`、README、npm 配置和锁文件。保留 `package-lock.json` 与 `src-tauri/Cargo.lock`，以便其他人使用相同的依赖版本构建。
+源码仓库提交 `src/`、`src-tauri/`、`tests/`、README、LICENSE、npm 配置和锁文件。保留 `package-lock.json` 与 `src-tauri/Cargo.lock`，以便其他人使用相同的依赖版本构建。
 
 将 `dist/奶蛙桌宠.exe` 作为 [GitHub Release 附件](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) 上传，供大家直接下载。依赖目录、编译缓存和本地 exe 不提交到 Git 历史。
+
+## 许可证
+
+本项目采用 [MIT 许可证](LICENSE)。使用、修改或分发时，请保留版权声明和许可证文本。第三方依赖遵循各自的许可证。
